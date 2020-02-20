@@ -9,8 +9,9 @@ $loadnav = (isset($_GET['loadnav']) && $_GET['loadnav'] != '') ? $_GET['loadnav'
     <div>               
                         <div>
                         <ul> 
-                        <li> <a href="index.php?loadnav=home"> HOME </a> </li>
+                        <li> <a href="index.php?loadnav=home"> Home </a> </li>
                         <li> <a href="index.php?loadnav=create">Create </a> </li>
+                            <li> <a href="index.php?loadnav=create">Read </a> </li>
                         </ul>
                         </div>
 
@@ -19,6 +20,9 @@ $loadnav = (isset($_GET['loadnav']) && $_GET['loadnav'] != '') ? $_GET['loadnav'
                         switch($loadnav){
                             case 'create':
                             require_once 'form_create.php';
+                            break;
+                            case 'read':
+                            require_once 'readall.php';
                             break;
                             default:
                             require_once 'home.php';
