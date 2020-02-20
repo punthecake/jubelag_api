@@ -11,7 +11,7 @@ $loadnav = (isset($_GET['loadnav']) && $_GET['loadnav'] != '') ? $_GET['loadnav'
                         <ul> 
                         <li> <a href="index.php?loadnav=home"> Home </a> </li>
                         <li> <a href="index.php?loadnav=create">Create </a> </li>
-                         <li> <a href="index.php?loadnav=read">Read </a> </li>
+                         <li> <a href="index.php?loadnav=read">Display Producs </a> </li>
                         </ul>
                         </div>
 
